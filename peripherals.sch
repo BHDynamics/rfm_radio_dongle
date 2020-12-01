@@ -1,0 +1,453 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DynOSSAT:RFM96 U?
+U 1 1 5FE60972
+P 7050 1750
+F 0 "U?" H 7600 2065 50  0000 C CNN
+F 1 "RFM96" H 7600 1974 50  0000 C CNN
+F 2 "DynOSSAT:HOPERF_RFM69HW" H 8500 -550 50  0001 C CNN
+F 3 "" H 8500 -550 50  0001 C CNN
+	1    7050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J?
+U 1 1 5FE60978
+P 4050 2350
+F 0 "J?" H 4107 2817 50  0000 C CNN
+F 1 "USB_A" H 4107 2726 50  0000 C CNN
+F 2 "DynOSSAT:USB_A_Plug_PCB" H 4200 2300 50  0001 C CNN
+F 3 " ~" H 4200 2300 50  0001 C CNN
+	1    4050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5FE6097E
+P 4600 1950
+F 0 "#PWR?" H 4600 1800 50  0001 C CNN
+F 1 "VBUS" H 4615 2123 50  0000 C CNN
+F 2 "" H 4600 1950 50  0001 C CNN
+F 3 "" H 4600 1950 50  0001 C CNN
+	1    4600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2150 4600 2150
+Wire Wire Line
+	4600 2150 4600 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5FE60986
+P 4050 2850
+F 0 "#PWR?" H 4050 2600 50  0001 C CNN
+F 1 "GND" H 4055 2677 50  0000 C CNN
+F 2 "" H 4050 2850 50  0001 C CNN
+F 3 "" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2750 3950 2800
+Wire Wire Line
+	3950 2800 4050 2800
+Wire Wire Line
+	4050 2800 4050 2750
+Wire Wire Line
+	4050 2800 4050 2850
+Connection ~ 4050 2800
+Wire Wire Line
+	4350 2350 4600 2350
+Wire Wire Line
+	4350 2450 4600 2450
+Text GLabel 4600 2350 2    50   BiDi ~ 0
+USB_D+
+Text GLabel 4600 2450 2    50   BiDi ~ 0
+USB_D-
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5FE60995
+P 8800 3050
+F 0 "J?" H 8900 3025 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8900 2934 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 8800 3050 50  0001 C CNN
+F 3 " ~" H 8800 3050 50  0001 C CNN
+	1    8800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE6099B
+P 8800 3450
+F 0 "#PWR?" H 8800 3200 50  0001 C CNN
+F 1 "GND" H 8805 3277 50  0000 C CNN
+F 2 "" H 8800 3450 50  0001 C CNN
+F 3 "" H 8800 3450 50  0001 C CNN
+	1    8800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3250 8800 3450
+NoConn ~ 8150 2750
+NoConn ~ 8150 2600
+NoConn ~ 8150 2000
+NoConn ~ 8150 2150
+NoConn ~ 7050 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5FE609A7
+P 6850 3450
+F 0 "#PWR?" H 6850 3200 50  0001 C CNN
+F 1 "GND" H 6855 3277 50  0000 C CNN
+F 2 "" H 6850 3450 50  0001 C CNN
+F 3 "" H 6850 3450 50  0001 C CNN
+	1    6850 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2950 6850 2950
+Wire Wire Line
+	6850 2950 6850 3100
+Wire Wire Line
+	7050 3100 6850 3100
+Connection ~ 6850 3100
+Wire Wire Line
+	6850 3100 6850 3250
+Wire Wire Line
+	7050 3250 6850 3250
+Connection ~ 6850 3250
+Wire Wire Line
+	6850 3250 6850 3450
+Wire Wire Line
+	7050 2450 6400 2450
+Wire Wire Line
+	7050 2300 6400 2300
+Wire Wire Line
+	7050 2150 6400 2150
+Wire Wire Line
+	7050 2000 6400 2000
+Wire Wire Line
+	7050 1750 6850 1750
+Wire Wire Line
+	6850 1750 6850 1500
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FE609BB
+P 6850 1500
+F 0 "#PWR?" H 6850 1350 50  0001 C CNN
+F 1 "+3V3" H 6865 1673 50  0000 C CNN
+F 2 "" H 6850 1500 50  0001 C CNN
+F 3 "" H 6850 1500 50  0001 C CNN
+	1    6850 1500
+	1    0    0    -1  
+$EndComp
+Text Label 6400 2000 0    50   ~ 0
+SDI
+Text Label 6400 2150 0    50   ~ 0
+SDO
+Text Label 6400 2300 0    50   ~ 0
+SCK
+Text Label 6400 2450 0    50   ~ 0
+RF_CS
+Wire Wire Line
+	8150 2300 8500 2300
+Text Label 8250 2300 0    50   ~ 0
+RF_INT
+Text Label 6400 2600 0    50   ~ 0
+RF_RESET
+$Comp
+L Device:R_Small R?
+U 1 1 5FE609C8
+P 6000 2350
+F 0 "R?" H 6059 2396 50  0000 L CNN
+F 1 "100k" H 6059 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 2350 50  0001 C CNN
+F 3 "~" H 6000 2350 50  0001 C CNN
+	1    6000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FE609CE
+P 6000 2200
+F 0 "#PWR?" H 6000 2050 50  0001 C CNN
+F 1 "+3V3" H 6015 2373 50  0000 C CNN
+F 2 "" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2450 6000 2600
+Wire Wire Line
+	6000 2600 7050 2600
+Wire Wire Line
+	6000 2250 6000 2200
+Wire Wire Line
+	6700 5400 6550 5400
+Wire Wire Line
+	6550 5400 6550 5300
+Wire Wire Line
+	6700 5500 6300 5500
+Wire Wire Line
+	6700 5600 6300 5600
+Wire Wire Line
+	6700 5700 6300 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5FE609DC
+P 6550 6100
+F 0 "#PWR?" H 6550 5850 50  0001 C CNN
+F 1 "GND" H 6555 5927 50  0000 C CNN
+F 2 "" H 6550 6100 50  0001 C CNN
+F 3 "" H 6550 6100 50  0001 C CNN
+	1    6550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FE609E2
+P 6550 5300
+F 0 "#PWR?" H 6550 5150 50  0001 C CNN
+F 1 "+3V3" H 6565 5473 50  0000 C CNN
+F 2 "" H 6550 5300 50  0001 C CNN
+F 3 "" H 6550 5300 50  0001 C CNN
+	1    6550 5300
+	1    0    0    -1  
+$EndComp
+Text Label 6300 5500 0    50   ~ 0
+SWCLK
+Text Label 6300 5600 0    50   ~ 0
+SWDIO
+$Comp
+L DynOSSAT:GD25Q32 U?
+U 1 1 5FE609EA
+P 4050 9900
+F 0 "U?" H 4575 10165 50  0000 C CNN
+F 1 "GD25Q32" H 4575 10074 50  0000 C CNN
+F 2 "DynOSSAT:WSON-8-1EP_3x4mm_P0.8mm" H 4350 9800 50  0001 C CNN
+F 3 "" H 4350 9800 50  0001 C CNN
+	1    4050 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 10200 3900 10200
+Wire Wire Line
+	3900 10200 3900 10050
+Wire Wire Line
+	4050 10050 3900 10050
+Connection ~ 3900 10050
+Wire Wire Line
+	3900 10050 3900 9900
+Wire Wire Line
+	4050 9900 3900 9900
+Connection ~ 3900 9900
+Wire Wire Line
+	3900 9900 3900 9700
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FE609F8
+P 3900 9700
+F 0 "#PWR?" H 3900 9550 50  0001 C CNN
+F 1 "+3V3" H 3915 9873 50  0000 C CNN
+F 2 "" H 3900 9700 50  0001 C CNN
+F 3 "" H 3900 9700 50  0001 C CNN
+	1    3900 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 9900 5600 9900
+Wire Wire Line
+	5100 10050 5600 10050
+Wire Wire Line
+	5100 10200 5600 10200
+Wire Wire Line
+	5100 10350 5600 10350
+Wire Wire Line
+	4050 10350 3900 10350
+Wire Wire Line
+	3900 10350 3900 10500
+$Comp
+L power:GND #PWR?
+U 1 1 5FE60A04
+P 3900 10500
+F 0 "#PWR?" H 3900 10250 50  0001 C CNN
+F 1 "GND" H 3905 10327 50  0000 C CNN
+F 2 "" H 3900 10500 50  0001 C CNN
+F 3 "" H 3900 10500 50  0001 C CNN
+	1    3900 10500
+	1    0    0    -1  
+$EndComp
+Text Label 5200 9900 0    50   ~ 0
+FLASH_SDI
+Text Label 5200 10050 0    50   ~ 0
+FLASH_CS
+Text Label 5200 10200 0    50   ~ 0
+FLASH_SDO
+Text Label 5200 10350 0    50   ~ 0
+FLASH_SCK
+Wire Wire Line
+	8150 3050 8600 3050
+$Comp
+L Connector_Generic:Conn_01x07 J?
+U 1 1 5FE60A0F
+P 6900 5700
+F 0 "J?" H 6980 5742 50  0000 L CNN
+F 1 "Conn_01x07" H 6980 5651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 6900 5700 50  0001 C CNN
+F 3 "~" H 6900 5700 50  0001 C CNN
+	1    6900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5800 6700 5800
+Wire Wire Line
+	6700 5900 6300 5900
+Wire Wire Line
+	6700 6000 6550 6000
+Wire Wire Line
+	6550 6000 6550 6100
+Text Label 6300 5700 0    50   ~ 0
+PA00
+Text Label 6300 5800 0    50   ~ 0
+PA01
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 5FE60A1B
+P 4650 5400
+F 0 "J?" H 4600 6117 50  0000 C CNN
+F 1 "Micro_SD_Card" H 4600 6026 50  0000 C CNN
+F 2 "DynOSSAT:TF-102-18" H 5800 5700 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 4650 5400 50  0001 C CNN
+	1    4650 5400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3750 5100
+Wire Wire Line
+	3750 5200 3100 5200
+Wire Wire Line
+	3750 5300 3100 5300
+Wire Wire Line
+	3750 5400 3650 5400
+Wire Wire Line
+	3650 5400 3650 4850
+Wire Wire Line
+	3750 5500 3100 5500
+Wire Wire Line
+	3750 5700 3100 5700
+Wire Wire Line
+	3750 5800 3650 5800
+Wire Wire Line
+	3650 5800 3650 6100
+Wire Wire Line
+	5450 6000 5550 6000
+Wire Wire Line
+	5550 6000 5550 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5FE60A2C
+P 5550 6100
+F 0 "#PWR?" H 5550 5850 50  0001 C CNN
+F 1 "GND" H 5555 5927 50  0000 C CNN
+F 2 "" H 5550 6100 50  0001 C CNN
+F 3 "" H 5550 6100 50  0001 C CNN
+	1    5550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE60A32
+P 3650 6100
+F 0 "#PWR?" H 3650 5850 50  0001 C CNN
+F 1 "GND" H 3655 5927 50  0000 C CNN
+F 2 "" H 3650 6100 50  0001 C CNN
+F 3 "" H 3650 6100 50  0001 C CNN
+	1    3650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FE60A38
+P 3650 4850
+F 0 "#PWR?" H 3650 4700 50  0001 C CNN
+F 1 "+3V3" H 3665 5023 50  0000 C CNN
+F 2 "" H 3650 4850 50  0001 C CNN
+F 3 "" H 3650 4850 50  0001 C CNN
+	1    3650 4850
+	1    0    0    -1  
+$EndComp
+Text Label 3100 5700 0    50   ~ 0
+SDI
+Text Label 3100 5300 0    50   ~ 0
+SDO
+Text Label 3100 5500 0    50   ~ 0
+SCK
+Text Label 3100 5200 0    50   ~ 0
+SD_CS
+Text Label 6300 5900 0    50   ~ 0
+PA02
+Wire Notes Line
+	5750 4050 9550 4050
+Wire Notes Line
+	9550 4050 9550 950 
+Wire Notes Line
+	9550 950  5750 950 
+Wire Notes Line
+	5750 950  5750 4050
+Text Notes 7450 1100 0    50   ~ 0
+Radio Module
+Wire Notes Line
+	3650 10800 5900 10800
+Wire Notes Line
+	5900 10800 5900 9250
+Wire Notes Line
+	5900 9250 3650 9250
+Wire Notes Line
+	3650 9250 3650 10800
+Text Notes 4500 9400 0    50   ~ 0
+Flash Memory
+Wire Notes Line
+	6150 6400 7500 6400
+Wire Notes Line
+	7500 6400 7500 4800
+Wire Notes Line
+	7500 4800 6150 4800
+Wire Notes Line
+	6150 4800 6150 6400
+Text Notes 6600 4950 0    50   ~ 0
+GPIO Header
+Wire Notes Line
+	3000 6450 5750 6450
+Wire Notes Line
+	5750 6450 5750 4300
+Wire Notes Line
+	5750 4300 3000 4300
+Wire Notes Line
+	3000 4300 3000 6450
+Text Notes 4050 4450 0    50   ~ 0
+Micro SD card
+Wire Notes Line
+	3550 3250 5200 3250
+Wire Notes Line
+	5200 3250 5200 1350
+Wire Notes Line
+	5200 1350 3550 1350
+Wire Notes Line
+	3550 1350 3550 3250
+Text Notes 4100 1500 0    50   ~ 0
+USB Connector
+$EndSCHEMATC
