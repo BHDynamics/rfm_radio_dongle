@@ -2,3 +2,5 @@ fp-info-cache
 *-cache.lib
 *.sch-bak
 _autosave-*
+LoRa_Dongle_Thin-rescue.dcm
+LoRa_Dongle_Thin-rescue.lib

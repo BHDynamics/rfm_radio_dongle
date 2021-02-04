@@ -4,9 +4,9 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "DynOSSAT-Radio_Dongle"
-Date "2020-11-25"
-Rev "1.0"
+Title "DynaLoRa-USB Dongle"
+Date "2021-02-04"
+Rev "1.2"
 Comp "BH Dynamics"
 Comment1 ""
 Comment2 ""
@@ -714,7 +714,7 @@ Wire Wire Line
 	3200 3750 3300 3750
 Wire Wire Line
 	3300 3750 3300 3900
-Text Label 1400 2750 0    50   ~ 0
+Text Label 1400 2850 0    50   ~ 0
 FLASH_SDI
 Wire Wire Line
 	3200 2450 3750 2450
@@ -724,16 +724,16 @@ Wire Wire Line
 	3200 2650 3750 2650
 Wire Wire Line
 	3200 2750 3750 2750
-Text Label 1400 2850 0    50   ~ 0
+Text Label 1400 2950 0    50   ~ 0
 FLASH_CS
 Wire Wire Line
 	3200 1850 4750 1850
 Wire Wire Line
 	3300 1950 3950 1950
 Connection ~ 3300 1950
-Text Label 3350 2550 0    50   ~ 0
+Text Label 3350 2450 0    50   ~ 0
 SDO
-Text Label 3350 2650 0    50   ~ 0
+Text Label 3350 2550 0    50   ~ 0
 SCK
 Wire Wire Line
 	1800 2950 1400 2950
@@ -743,7 +743,7 @@ Wire Wire Line
 	1800 2850 1400 2850
 Wire Wire Line
 	1800 2750 1400 2750
-Text Label 3350 2450 0    50   ~ 0
+Text Label 3350 2650 0    50   ~ 0
 SDI
 Wire Wire Line
 	1800 2650 1400 2650
@@ -858,17 +858,6 @@ F 3 "" H 12900 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR030
-U 1 1 5FCCC2F9
-P 12900 6200
-F 0 "#PWR030" H 12900 5950 50  0001 C CNN
-F 1 "GND" H 12905 6027 50  0000 C CNN
-F 2 "" H 12900 6200 50  0001 C CNN
-F 3 "" H 12900 6200 50  0001 C CNN
-	1    12900 6200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR036
 U 1 1 5FCCBDC2
 P 14800 6200
@@ -883,10 +872,6 @@ Wire Wire Line
 	14800 6100 14800 6200
 Wire Wire Line
 	14700 6100 14800 6100
-Wire Wire Line
-	12900 5900 12900 6200
-Wire Wire Line
-	13000 5900 12900 5900
 Wire Wire Line
 	13000 5800 12350 5800
 Wire Wire Line
@@ -1173,12 +1158,12 @@ F 3 "" H 14000 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_A J2
+L LoRa_Dongle_Thin-rescue:USB_A-Connector J2
 U 1 1 5FBE608B
 P 13450 2150
 F 0 "J2" H 13507 2617 50  0000 C CNN
 F 1 "USB_A" H 13507 2526 50  0000 C CNN
-F 2 "DynOSSAT:USB_A_Plug_PCB" H 13600 2100 50  0001 C CNN
+F 2 "DynOSSAT:C46394" H 13600 2100 50  0001 C CNN
 F 3 " ~" H 13600 2100 50  0001 C CNN
 	1    13450 2150
 	1    0    0    -1  
@@ -1234,7 +1219,7 @@ Wire Notes Line
 	7950 950  9950 950 
 Text Label 1400 3050 0    50   ~ 0
 FLASH_SCK
-Text Label 1400 2950 0    50   ~ 0
+Text Label 1400 2750 0    50   ~ 0
 FLASH_SDO
 Wire Wire Line
 	1800 3350 1400 3350
@@ -1277,4 +1262,20 @@ Wire Wire Line
 	8550 9300 8850 9300
 Wire Wire Line
 	8850 9200 8550 9200
+NoConn ~ 13000 5900
+Wire Wire Line
+	13000 5700 12900 5700
+Wire Wire Line
+	12900 5700 12900 6200
+$Comp
+L power:GND #PWR?
+U 1 1 601271EE
+P 12900 6200
+F 0 "#PWR?" H 12900 5950 50  0001 C CNN
+F 1 "GND" H 12905 6027 50  0000 C CNN
+F 2 "" H 12900 6200 50  0001 C CNN
+F 3 "" H 12900 6200 50  0001 C CNN
+	1    12900 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
