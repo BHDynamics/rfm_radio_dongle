@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name DynOSSAT)(type Legacy)(uri ${KIPRJMOD}/lib/DynOSSAT.lib)(options "")(descr ""))
+  (lib (name DynaLoRa_Dongle-rescue)(type Legacy)(uri ${KIPRJMOD}/DynaLoRa_Dongle-rescue.lib)(options "")(descr ""))
 )

@@ -1,0 +1,35 @@
+### Module positions - created on 02/05/21 10:29:27 ###
+### Printed by Pcbnew version kicad (5.1.9)-1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val               Package                                            PosX       PosY       Rot  Side
+J1        Conn_01x07        PinHeader_1x07_P2.54mm_Vertical_SMD_Pin1Left    36.4236    52.2986   90.0000  bottom
+J4        Micro_SD_Card     TF-102-18                                       56.5094    55.6260    0.0000  bottom
+C1        10nF              C_0402_1005Metric                               37.7698    64.4906  270.0000  top
+C2        10nF              C_0402_1005Metric                               30.1244    64.4906  270.0000  top
+C3        100nF             C_0402_1005Metric                               43.5610    58.0390  315.0000  top
+C4        100nF             C_0402_1005Metric                               33.7566    50.9524  315.0000  top
+C5        1uF               C_0603_1608Metric                               31.7754    52.5272  135.0000  top
+C6        22uF              C_0603_1608Metric                               24.8158    52.9590  270.0000  top
+C9        22uF              C_0603_1608Metric                               29.1084    60.3504   90.0000  top
+C10       22uF              C_0603_1608Metric                               30.6070    60.3504   90.0000  top
+D1        WS2812B           LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm          67.7616    62.3824  270.0000  top
+D2        LED_Small         LED_0805_2012Metric                             25.1460    64.1096    0.0000  top
+D3        LED_Small         LED_0805_2012Metric                             28.4480    50.1142  180.0000  top
+J2        USB_A             C46394                                          16.2560    57.5310   90.0000  top
+L2        2.2uH             L_1210_3225Metric                               25.8318    60.3504    0.0000  top
+R1        100k              R_0402_1005Metric                               36.8554    64.4906   90.0000  top
+R2        100k              R_0402_1005Metric                               29.1846    64.4906   90.0000  top
+R3        510R              R_0402_1005Metric                               66.6948    58.8010  180.0000  top
+R4        510R              R_0402_1005Metric                               27.4574    64.1096   90.0000  top
+R5        510R              R_0402_1005Metric                               26.1112    50.1142   90.0000  top
+R6        100k              R_0402_1005Metric                               45.4152    54.3052   90.0000  top
+R7        100k              R_0402_1005Metric                               28.2194    56.6166  270.0000  top
+R8        22k               R_0402_1005Metric                               28.6790    55.1434    0.0000  top
+SW1       SW_Push           SW_SPST_B3U-3000P                               40.7924    64.3128    0.0000  top
+SW2       SW_Push           SW_SPST_B3U-3000P                               33.0708    64.3128    0.0000  top
+U1        GD25Q32           WSON-8-1EP_3x4mm_P0.8mm                         43.5102    51.6890  315.0000  top
+U2        ATSAMD21E18A-AUT  QFP80P900X900X120-32N                           36.9824    56.3626  135.0000  top
+U3        RFM9X             HOPERF_RFM69HW                                  55.8490    57.2262    0.0000  top
+U4        SY80XX            SOT-23-5                                        25.7556    56.4642  270.0000  top
+## End
