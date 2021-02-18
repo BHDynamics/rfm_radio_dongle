@@ -19,4 +19,4 @@ Hardware in this repository is licenced under **CERN OHL v1.2**.
 
 ## Documentation
 
-Available soon!
+Available in our [Wiki](https://github.com/BHDynamics/rfm_radio_dongle/wiki).
